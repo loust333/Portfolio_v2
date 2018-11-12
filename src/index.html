@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio, web developer">
+    <meta name="author" content="Lourenço Steve">
+
+    <title>Steve Lourenço</title>
+    <style>
+    @font-face {
+      font-family: 'FontAwesome';
+      src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+      src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    .fa {
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .fa-chevron-up:before {
+      content: "\f077";
+    }
+
+    .fa-bars:before {
+      content: "\f0c9";
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+
+    html {
+      font-family: sans-serif;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    header,
+    nav,
+    section {
+      display: block;
+    }
+
+    a {
+      background-color: transparent;
+    }
+
+    img {
+      border: 0;
+    }
+
+    hr {
+      height: 0;
+      -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+    }
+
+    button {
+      margin: 0;
+      font: inherit;
+      color: inherit;
+    }
+
+    button {
+      overflow: visible;
+    }
+
+    button {
+      text-transform: none;
+    }
+
+    button {
+      -webkit-appearance: button;
+    }
+
+    button::-moz-focus-inner {
+      padding: 0;
+      border: 0;
+    }
+
+    * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    :after,
+    :before {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 10px;
+    }
+
+    body {
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #333;
+      background-color: #fff;
+    }
+
+    button {
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+    }
+
+    a {
+      color: #337ab7;
+      text-decoration: none;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    .img-responsive {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .img-circle {
+      border-radius: 50%;
+    }
+
+    hr {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 0;
+      border-top: 1px solid #eee;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+    }
+
+    h3,
+    h4 {
+      font-family: inherit;
+      font-weight: 500;
+      line-height: 1.1;
+      color: inherit;
+    }
+
+    h3 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    h4 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+
+    h4 {
+      font-size: 18px;
+    }
+
+    p {
+      margin: 0 0 10px;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .text-justify {
+      text-align: justify;
+    }
+
+    ul {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .container {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @media (min-width:768px) {
+      .container {
+        width: 750px;
+      }
+    }
+
+    @media (min-width:992px) {
+      .container {
+        width: 970px;
+      }
+    }
+
+    @media (min-width:1200px) {
+      .container {
+        width: 1170px;
+      }
+    }
+
+    .row {
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+
+    .col-lg-12,
+    .col-md-12 {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+    @media (min-width:992px) {
+      .col-md-12 {
+        float: left;
+      }
+
+      .col-md-12 {
+        width: 100%;
+      }
+    }
+
+    @media (min-width:1200px) {
+      .col-lg-12 {
+        float: left;
+      }
+
+      .col-lg-12 {
+        width: 100%;
+      }
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 6px 12px;
+      margin-bottom: 0;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.42857143;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      -ms-touch-action: manipulation;
+      touch-action: manipulation;
+      background-image: none;
+      border: 1px solid transparent;
+      border-radius: 4px;
+    }
+
+    .btn-primary {
+      color: #fff;
+      background-color: #337ab7;
+      border-color: #2e6da4;
+    }
+
+    .collapse {
+      display: none;
+    }
+
+    .nav {
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+    }
+
+    .nav>li {
+      position: relative;
+      display: block;
+    }
+
+    .nav>li>a {
+      position: relative;
+      display: block;
+      padding: 10px 15px;
+    }
+
+    .navbar {
+      position: relative;
+      min-height: 50px;
+      margin-bottom: 20px;
+      border: 1px solid transparent;
+    }
+
+    @media (min-width:768px) {
+      .navbar {
+        border-radius: 4px;
+      }
+    }
+
+    @media (min-width:768px) {
+      .navbar-header {
+        float: left;
+      }
+    }
+
+    .navbar-collapse {
+      padding-right: 15px;
+      padding-left: 15px;
+      overflow-x: visible;
+      -webkit-overflow-scrolling: touch;
+      border-top: 1px solid transparent;
+      -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    }
+
+    @media (min-width:768px) {
+      .navbar-collapse {
+        width: auto;
+        border-top: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+      }
+
+      .navbar-collapse.collapse {
+        display: block!important;
+        height: auto!important;
+        padding-bottom: 0;
+        overflow: visible!important;
+      }
+
+      .navbar-fixed-top .navbar-collapse {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+
+    .navbar-fixed-top .navbar-collapse {
+      max-height: 340px;
+    }
+
+    @media (max-device-width:480px) and (orientation:landscape) {
+      .navbar-fixed-top .navbar-collapse {
+        max-height: 200px;
+      }
+    }
+
+    .container>.navbar-collapse,
+    .container>.navbar-header {
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+
+    @media (min-width:768px) {
+      .container>.navbar-collapse,
+      .container>.navbar-header {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+
+    .navbar-fixed-top {
+      position: fixed;
+      right: 0;
+      left: 0;
+      z-index: 1030;
+    }
+
+    @media (min-width:768px) {
+      .navbar-fixed-top {
+        border-radius: 0;
+      }
+    }
+
+    .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+    }
+
+    .navbar-brand {
+      float: left;
+      height: 50px;
+      padding: 15px 15px;
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    @media (min-width:768px) {
+      .navbar>.container .navbar-brand {
+        margin-left: -15px;
+      }
+    }
+
+    .navbar-toggle {
+      position: relative;
+      float: right;
+      padding: 9px 10px;
+      margin-top: 8px;
+      margin-right: 15px;
+      margin-bottom: 8px;
+      background-color: transparent;
+      background-image: none;
+      border: 1px solid transparent;
+      border-radius: 4px;
+    }
+
+    @media (min-width:768px) {
+      .navbar-toggle {
+        display: none;
+      }
+    }
+
+    .navbar-nav {
+      margin: 7.5px -15px;
+    }
+
+    .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      line-height: 20px;
+    }
+
+    @media (min-width:768px) {
+      .navbar-nav {
+        float: left;
+        margin: 0;
+      }
+
+      .navbar-nav>li {
+        float: left;
+      }
+
+      .navbar-nav>li>a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+    }
+
+    @media (min-width:768px) {
+      .navbar-right {
+        float: right!important;
+        margin-right: -15px;
+      }
+    }
+
+    .navbar-default {
+      background-color: #f8f8f8;
+      border-color: #e7e7e7;
+    }
+
+    .navbar-default .navbar-brand {
+      color: #777;
+    }
+
+    .navbar-default .navbar-nav>li>a {
+      color: #777;
+    }
+
+    .navbar-default .navbar-toggle {
+      border-color: #ddd;
+    }
+
+    .navbar-default .navbar-collapse {
+      border-color: #e7e7e7;
+    }
+
+    .container:after,
+    .container:before,
+    .nav:after,
+    .nav:before,
+    .navbar-collapse:after,
+    .navbar-collapse:before,
+    .navbar-header:after,
+    .navbar-header:before,
+    .navbar:after,
+    .navbar:before,
+    .row:after,
+    .row:before {
+      display: table;
+      content: " ";
+    }
+
+    .container:after,
+    .nav:after,
+    .navbar-collapse:after,
+    .navbar-header:after,
+    .navbar:after,
+    .row:after {
+      clear: both;
+    }
+
+    .hidden {
+      display: none!important;
+    }
+
+    @-ms-viewport {
+      width: device-width;
+    }
+
+    .visible-xs {
+      display: none!important;
+    }
+
+    @media (max-width:767px) {
+      .visible-xs {
+        display: block!important;
+      }
+    }
+
+    @media (max-width:767px) {
+      .hidden-xs {
+        display: none!important;
+      }
+    }
+
+    @media (min-width:768px) and (max-width:991px) {
+      .hidden-sm {
+        display: none!important;
+      }
+    }
+
+    @media (min-width:992px) and (max-width:1199px) {
+      .hidden-md {
+        display: none!important;
+      }
+    }
+
+    @media (min-width:1200px) {
+      .hidden-lg {
+        display: none!important;
+      }
+    }
+
+    .timeline {
+      position: relative;
+      padding: 4px 0 0;
+      margin-top: 22px;
+      list-style: none;
+    }
+
+    .timeline>li:nth-child(even) {
+      position: relative;
+      margin-bottom: 50px;
+      height: 180px;
+      right: -100px;
+    }
+
+    .timeline>li:nth-child(odd) {
+      position: relative;
+      margin-bottom: 50px;
+      height: 180px;
+      left: -100px;
+    }
+
+    .timeline>li:after,
+    .timeline>li:before {
+      content: " ";
+      display: table;
+    }
+
+    .timeline>li:after {
+      clear: both;
+      min-height: 170px;
+    }
+
+    .timeline>li .timeline-panel {
+      position: relative;
+      float: left;
+      width: 41%;
+      padding: 0 20px 20px 30px;
+      text-align: right;
+    }
+
+    .timeline>li .timeline-panel:before {
+      right: auto;
+      left: -15px;
+      border-right-width: 15px;
+      border-left-width: 0;
+    }
+
+    .timeline>li .timeline-panel:after {
+      right: auto;
+      left: -14px;
+      border-right-width: 14px;
+      border-left-width: 0;
+    }
+
+    .timeline>li .timeline-image {
+      z-index: 100;
+      position: absolute;
+      left: 50%;
+      border: 7px solid #3b5998;
+      border-radius: 100%;
+      background-color: #3b5998;
+      box-shadow: 0 0 5px #4582ec;
+      width: 200px;
+      height: 200px;
+      margin-left: -100px;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel {
+      float: right;
+      padding: 0 30px 20px 20px;
+      text-align: left;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel:before {
+      right: auto;
+      left: -15px;
+      border-right-width: 15px;
+      border-left-width: 0;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel:after {
+      right: auto;
+      left: -14px;
+      border-right-width: 14px;
+      border-left-width: 0;
+    }
+
+    .timeline>li:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline .timeline-heading h4 {
+      margin-top: 22px;
+      margin-bottom: 4px;
+      padding: 0;
+      color: #173c84;
+    }
+
+    .timeline .timeline-heading h4.subheading {
+      margin: 0;
+      padding: 0;
+      text-transform: none;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .timeline .timeline-body>p {
+      margin-bottom: 0;
+      color: #252525;
+    }
+
+    .timeline>li:nth-child(odd) .line:before {
+      content: "";
+      position: absolute;
+      top: 60px;
+      bottom: 0;
+      left: 690px;
+      width: 4px;
+      height: 340px;
+      background-color: #3b5998;
+      -ms-transform: rotate(-44deg);
+      -webkit-transform: rotate(-44deg);
+      transform: rotate(-44deg);
+      box-shadow: 0 0 5px #4582ec;
+    }
+
+    .timeline>li:nth-child(even) .line:before {
+      content: "";
+      position: absolute;
+      top: 60px;
+      bottom: 0;
+      left: 450px;
+      width: 4px;
+      height: 340px;
+      background-color: #3b5998;
+      -ms-transform: rotate(44deg);
+      -webkit-transform: rotate(44deg);
+      transform: rotate(44deg);
+      box-shadow: 0 0 5px #4582ec;
+    }
+
+    @media (min-width:992px) and (max-width:1199px) {
+      .timeline>li:nth-child(even) {
+        margin-bottom: 0;
+        min-height: 0;
+        right: 0;
+      }
+
+      .timeline>li:nth-child(odd) {
+        margin-bottom: 0;
+        min-height: 0;
+        left: 0;
+      }
+
+      .timeline>li:nth-child(even) .timeline-image {
+        left: 0;
+        margin-left: 0;
+      }
+
+      .timeline>li:nth-child(odd) .timeline-image {
+        left: 690px;
+        margin-left: 0;
+      }
+
+      .timeline>li:nth-child(even) .timeline-panel {
+        width: 76%;
+        padding: 0 0 20px;
+        text-align: left;
+      }
+
+      .timeline>li:nth-child(odd) .timeline-panel {
+        width: 70%;
+        padding: 0 0 20px;
+        text-align: right;
+      }
+
+      .timeline>li .line {
+        display: none;
+      }
+    }
+
+    @media (min-width:768px) and (max-width:991px) {
+      .timeline>li:nth-child(even) {
+        margin-bottom: 0;
+        min-height: 0;
+        right: 0;
+      }
+
+      .timeline>li:nth-child(odd) {
+        margin-bottom: 0;
+        min-height: 0;
+        left: 0;
+      }
+
+      .timeline>li:nth-child(even) .timeline-image {
+        left: 0;
+        margin-left: 0;
+      }
+
+      .timeline>li:nth-child(odd) .timeline-image {
+        left: 520px;
+        margin-left: 0;
+      }
+
+      .timeline>li:nth-child(even) .timeline-panel {
+        width: 70%;
+        padding: 0 0 20px;
+        text-align: left;
+      }
+
+      .timeline>li:nth-child(odd) .timeline-panel {
+        width: 70%;
+        padding: 0 0 20px;
+        text-align: right;
+      }
+
+      .timeline>li .line {
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width:767px) {
+      .timeline>li:nth-child(even) {
+        margin-bottom: 0;
+        min-height: 0;
+        right: 0;
+      }
+
+      .timeline>li:nth-child(odd) {
+        margin-bottom: 0;
+        min-height: 0;
+        left: 0;
+      }
+
+      .timeline>li .timeline-image {
+        position: static;
+        width: 150px;
+        height: 150px;
+        margin-bottom: 0;
+      }
+
+      .timeline>li:nth-child(even) .timeline-image {
+        left: 0;
+        margin-left: 0;
+        float: left;
+      }
+
+      .timeline>li:nth-child(odd) .timeline-image {
+        float: right;
+        left: 0;
+        margin-left: 0;
+      }
+
+      .timeline>li:nth-child(even) .timeline-panel {
+        width: 100%;
+        padding: 0 0 20px 14px;
+      }
+
+      .timeline>li:nth-child(odd) .timeline-panel {
+        width: 100%;
+        padding: 0 14px 20px 0;
+      }
+
+      .timeline>li .line {
+        display: none;
+      }
+    }
+
+    section {
+      background-color: rgba(255,255,255,.7);
+    }
+
+    @font-face {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 400;
+      src: local('Montserrat Regular'),local('Montserrat-Regular'),url(https://fonts.gstatic.com/s/montserrat/v10/SKK6Nusyv8QPNMtI4j9J2wsYbbCjybiHxArTLjt7FRU.woff2) format('woff2');
+      unicode-range: U+0102-0103,U+1EA0-1EF9,U+20AB;
+    }
+
+    @font-face {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 400;
+      src: local('Montserrat Regular'),local('Montserrat-Regular'),url(https://fonts.gstatic.com/s/montserrat/v10/gFXtEMCp1m_YzxsBpKl68gsYbbCjybiHxArTLjt7FRU.woff2) format('woff2');
+      unicode-range: U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 400;
+      src: local('Montserrat Regular'),local('Montserrat-Regular'),url(https://fonts.gstatic.com/s/montserrat/v10/zhcz-_WihjSQC0oHJ9TCYAzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
+      unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215;
+    }
+
+    @font-face {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 700;
+      src: local('Montserrat Bold'),local('Montserrat-Bold'),url(https://fonts.gstatic.com/s/montserrat/v10/IQHow_FEYlDC4Gzy_m8fcnv4bDVR720piddN5sbmjzs.woff2) format('woff2');
+      unicode-range: U+0102-0103,U+1EA0-1EF9,U+20AB;
+    }
+
+    @font-face {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 700;
+      src: local('Montserrat Bold'),local('Montserrat-Bold'),url(https://fonts.gstatic.com/s/montserrat/v10/IQHow_FEYlDC4Gzy_m8fcjrEaqfC9P2pvLXik1Kbr9s.woff2) format('woff2');
+      unicode-range: U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 700;
+      src: local('Montserrat Bold'),local('Montserrat-Bold'),url(https://fonts.gstatic.com/s/montserrat/v10/IQHow_FEYlDC4Gzy_m8fcmaVI6zN22yiurzcBKxPjFE.woff2) format('woff2');
+      unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215;
+    }
+
+    body {
+      font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+      overflow-x: hidden;
+      background: url(../img/bg2-min.jpg) center center no-repeat fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    a {
+      color: #98c3f6;
+      outline: 0;
+    }
+
+    h3,
+    h4 {
+      font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    hr.star-light {
+      padding: 0;
+      border: none;
+      border-top: solid 5px;
+      text-align: center;
+      max-width: 250px;
+      margin: 25px auto 30px;
+    }
+
+    hr.star-light:after {
+      font-family: FontAwesome;
+      display: inline-block;
+      position: relative;
+      top: -.8em;
+      font-size: 2em;
+      padding: 0 .25em;
+    }
+
+    .navbar-custom,
+    header .intro-text .name {
+      font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      text-transform: uppercase;
+    }
+
+    hr.star-light {
+      border-color: #fff;
+    }
+
+    hr.star-light:after {
+      background-color: rgba(152,195,246,.7);
+      color: #fff;
+    }
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-nav li a,
+    header {
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      background: rgba(152,195,246,.7);
+    }
+
+    header .container {
+      padding-top: 100px;
+      padding-bottom: 50px;
+    }
+
+    header img {
+      display: block;
+      margin: 0 auto 20px;
+    }
+
+    header .intro-text .name {
+      display: block;
+      font-weight: 700;
+      font-size: 2em;
+    }
+
+    header .intro-text .skills {
+      font-size: 1.25em;
+      font-weight: 300;
+    }
+
+    @media (min-width:768px) {
+      header .container {
+        padding-top: 200px;
+        padding-bottom: 100px;
+      }
+
+      header .intro-text .name {
+        font-size: 4.75em;
+      }
+
+      header .intro-text .skills {
+        font-size: 1.75em;
+      }
+    }
+
+    .navbar-custom {
+      background: #6179a3;
+      font-weight: 700;
+      border: none;
+    }
+
+    .navbar-custom .navbar-nav {
+      letter-spacing: 1px;
+    }
+
+    .navbar-custom .navbar-toggle {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 10px;
+      border-color: #fff;
+    }
+
+    @media (min-width:768px) {
+      .navbar-custom {
+        padding: 25px 0;
+      }
+
+      .navbar-custom .navbar-brand {
+        font-size: 2em;
+      }
+    }
+
+    section {
+      padding: 100px 0;
+    }
+
+    @media (max-width:767px) {
+      section {
+        padding: 75px 0;
+      }
+    }
+
+    .scroll-top,
+    .scroll-top .btn {
+      width: 50px;
+      height: 50px;
+    }
+
+    .scroll-top {
+      position: fixed;
+      right: 2%;
+      bottom: 2%;
+      z-index: 1049;
+    }
+
+    .scroll-top .btn {
+      font-size: 20px;
+      border-radius: 100%;
+      line-height: 28px;
+    }
+    </style>
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive img-circle" id="me" src="img/me_profil-min.jpg" alt="My picture">
+                    <div class="intro-text">
+                        <span class="name">Lourenço<br /> Steve</span>
+                        <hr class="star-light">
+                        <span class="skills">Web Developer - Dreamer - Success </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Portfolio</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center jumbotron">
+                    Empty for the moment
+                </div>
+                <!-- <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/cabin.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="star-light">
+                    <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#it_professional" aria-expanded="false" aria-controls="it_professional" data-parent="#timeline_group">
+                     <i class="fa fa-briefcase"></i> IT Professional History
+                    </button>
+                    <p class="visible-xs">
+
+                    </p>
+                    <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#educational_background" aria-expanded="false" aria-controls="educational_background" data-parent="#timeline_group">
+                      <i class="fa fa-graduation-cap"></i> Educational Background
+                    </button>
+                </div>
+            </div>
+            <div class="panel-group" id="timeline_group" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+
+                    <div id="it_professional" class="panel-collapse collapse in" role="tabpanel">
+                        <div class="col-md-12">
+                            <h3 class="text-center">IT Professional History</h3>
+                            <p class="text-center">
+                                This is a timeline containing everything I did (internships, student jobs) related to the computer field.
+                            </p>
+                            <!--  Description -->
+                            <ul class="timeline">
+                                <li>
+                                    <div class="timeline-image">
+                                        <a href="https://clement-weyer.lu/" target="_blank">
+                                            <img class="img-circle img-responsive" src="img/clementweyer-min.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="timeline-panel">
+                                      <div class="timeline-heading">
+                                        <h4>Clement & Weyer</h4>
+                                        <h4 class="subheading">Freelance job (October 2016 - Now)</h4>
+                                      </div>
+                                      <div class="timeline-body">
+                                        <h5>Web Developer (Ruby on Rails)</h5>
+                                        <p class="text-justify">
+                                            After finishing my Bachelor's degree, I maintained contact with the company,
+                                            working as a half-time Freelancer. I used the half-time I gained to learn new technologies.
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div class="line"></div>
+                                </li>
+                                <li  class="timeline-inverted">
+                                    <div class="timeline-image">
+                                      <a href="https://clement-weyer.lu/" target="_blank">
+                                        <img class="img-circle img-responsive" src="img/clementweyer-min.png" alt="">
+                                      </a>
+                                    </div>
+                                    <div class="timeline-panel">
+                                      <div class="timeline-heading">
+                                        <h4>Clement & Weyer</h4>
+                                        <h4 class="subheading">Internship (February 2016 - September 2016)</h4>
+                                      </div>
+                                      <div class="timeline-body">
+                                        <h5>Web Developer (Ruby on Rails)</h5>
+                                        <p class="text-justify">
+                                            Internship at Clement & Weyer Company during the last semester of my Bachelor's degree at the University of Luxembourg.
+                                            I did 3 months internship + 2 months as volontary internship.
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div class="line"></div>
+                                </li>
+                                <li>
+                                    <div class="timeline-image">
+                                        <img class="img-circle img-responsive" src="img/ctie-min.jpg" alt="">
+                                    </div>
+                                    <div class="timeline-panel">
+                                      <div class="timeline-heading">
+                                        <h4>Centre des technologies de l'information de l'Etat</h4>
+                                        <h4 class="subheading">Student Job (July 2013 - August 2013)</h4>
+                                      </div>
+                                      <div class="timeline-body">
+                                        <h5>Computer assistant</h5>
+                                        <p class="text-justify">
+                                            After finishing my computer technician degree in highschool, I wanted to study
+                                            Computer Science more. I applied to the University of Luxembourg and meanwhile, found
+                                            a student job as a Computer Assistant for the CTIE during the summer break. There, I used to help different highschools in order to replace
+                                            their outdated IT hardware.
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div class="line"></div>
+                                </li>
+                                <li  class="timeline-inverted">
+                                    <div class="timeline-image">
+                                      <a href="http://www.datagest.lu/" target="_blank">
+                                          <img class="img-circle img-responsive" src="img/datagest-min.png" alt="">
+                                      </a>
+                                    </div>
+                                    <div class="timeline-panel">
+                                      <div class="timeline-heading">
+                                        <h4>Datagest</h4>
+                                        <h4 class="subheading">Internship (April 2012)</h4>
+                                      </div>
+                                      <div class="timeline-body">
+                                        <h5>Computer assistant</h5>
+                                        <p class="text-justify">
+                                            In 2012, I did a one month internship in connection to my
+                                            computer technician training (accomplished during highschool). The Datagest company recruted me and allowed me to have a first experience
+                                            as a Computer assistant (or doing so called, Helpdesk).
+                                        </p>
+                                      </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-collapse collapse" role="tabpanel" id="educational_background">
+                        <div class="col-md-12">
+                            <h3 class="text-center">Educational Background</h3>
+                            <p class="text-center">
+                                This is a timeline of my educational background.
+                            </p>
+                            <!--  Description -->
+                            <ul class="timeline">
+                                <li>
+                                    <div class="timeline-image">
+                                      <a href="http://www.uc.pt/" target="_blank">
+                                          <img class="img-circle img-responsive" src="img/uoc-min.jpg" alt="">
+                                      </a>
+                                    </div>
+                                    <div class="timeline-panel">
+                                      <div class="timeline-heading">
+                                        <h4>Bachelor in computer science - Erasmus</h4>
+                                        <h4 class="subheading">University of Coimbra (2014)</h4>
+                                      </div>
+                                      <div class="timeline-body">
+                                        <p class="text-justify">
+                                            During my Bachelor studies in Computer Science, I had the opportunity to live a one
+                                            semester Erasmus experience. I decided to go to my home country, Portugal, and have a great
+                                            time in Coimbra, which allowed me to meet new friends (unforgettable ones) and of
+                                            course study Computer Science in portuguese.
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div class="line"></div>
+                                </li>
+                                <li class="timeline-inverted">
+                                    <div class="timeline-image">
+                                        <a href="http://wwwen.uni.lu/" target="_blank">
+                                            <img class="img-circle img-responsive" src="img/uol-min.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="timeline-panel">
+                                      <div class="timeline-heading">
+                                        <h4>Bachelor in Computer Science</h4>
+                                        <h4 class="subheading">University of Luxembourg (2013 - 2016)</h4>
+                                      </div>
+                                      <div class="timeline-body">
+                                        <p class="text-justify">
+                                            I used to want to go work after my highschool studies, but I was still curious
+                                             to discover the university life and what I would be able to learn there.
+                                             I applied for the Bachelor in Computer Science, where
+                                            I had a great experience. After obtaining this degree, I decided to have a break for a year
+                                            and have some professional experience before, maybe, applying for a Master.
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div class="line"></div>
+                                </li>
+                                <li >
+                                    <div class="timeline-image">
+                                        <a href="http://www.ltam.lu/" target="_blank">
+                                            <img class="img-circle img-responsive" src="img/ltam-min.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="timeline-panel">
+                                      <div class="timeline-heading">
+                                        <h4>Secondary studies, computer technician training</h4>
+                                        <h4 class="subheading">Lycée des Arts et Métiers, Luxembourg (2009 - 2013)</h4>
+                                      </div>
+                                      <div class="timeline-body">
+                                        <p class="text-justify">
+                                            During the 9th year of my highschool education, I had to choose a new direction to my studies.
+                                            Knowing that I liked math and computers (gaming specially), I decided
+                                            to go for a specific training which would allow me to have a computer technician degree and
+                                            the related skills.
+
+                                        </p>
+                                      </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Contact Me</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Name</label>
+                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Email Address</label>
+                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Phone Number</label>
+                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Message</label>
+                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-success btn-lg">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+
+                        <p>Adress XXX<br />
+                            <br>Luxembourg</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <!-- TODO -->
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/steve.lourenco.77" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/loust333" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://lu.linkedin.com/in/steve-lourenco-2b9818b5" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <!-- TODO -->
+                        <h3>About Steve Lourenco's Website</h3>
+                        <p>This website represents <a href="#page-top">my portfolio</a>. My career path will be displayed in here.</p>
+                        <p><a>#Bootstrap3</a> <a>#Template</a> <a>#Less</a> <a>#npm</a> <a>#gulp</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- TODO -->
+                        Copyright &copy; Steve Lourenço 2016
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+    <!-- <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+</body>
+</html>
+<link href="css/all.min.css" rel="stylesheet">
+<script async src="js/all.js"></script>
